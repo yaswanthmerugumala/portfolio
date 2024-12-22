@@ -10,336 +10,240 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Yaswanth Merugumala</div>
-      <div>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">Yaswanth Merugumala</div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" aria-label="About section">About</a></li>
+          <li><a href="#experience" aria-label="Experience section">Experience</a></li>
+          <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+          <li><a href="#contact" aria-label="Contact section">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Yaswanth </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Yaswanth</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links" aria-expanded="false">
+            <ul>
+              <li><a href="#about" onclick="toggleMenu()" aria-label="About section">About</a></li>
+              <li><a href="#experience" onclick="toggleMenu()" aria-label="Experience section">Experience</a></li>
+              <li><a href="#projects" onclick="toggleMenu()" aria-label="Projects section">Projects</a></li>
+              <li><a href="#contact" onclick="toggleMenu()" aria-label="Contact section">Contact</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/yashu.png" alt="Yashu profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Yaswanth Merugumala</h1>
-        <p class="section__text__p2">Fullstack Web Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/YASWANTH MERUGUMALA RESUME.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/yaswanthmerugumala/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/yaswanthmerugumala'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
+      </nav>
+    </header>
+
+    <main>
+      <section id="profile">
         <div class="section__pic-container">
-          <img
-            src="./assets/Me2.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/yashu.png" alt="Yashu profile picture" />
         </div>
-        <div class="about-details-container">
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Yaswanth Merugumala</h1>
+          <p class="section__text__p2">Aspiring Software & Web Developer</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/YASWANTH MERUGUMALA RESUME.pdf')" aria-label="Download CV">Download CV</button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+          </div>
+          <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/yaswanthmerugumala/'" aria-label="LinkedIn Profile"/>
+            <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="location.href='https://github.com/yaswanthmerugumala'" aria-label="GitHub Profile"/>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img src="./assets/Me2.png" alt="Profile picture" class="about-pic" />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                <h3>Experience</h3>
+                <p>Software Developer <br />FullStack Web Developer</p>
+              </div>
+              <div class="details-container">
+                <img src="./assets/education.png" alt="Education icon" class="icon" />
+                <h3>Education</h3>
+                <p>Vellore Institute of Technology <br />CSE - CYBER SECURITY</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Ambitious, hard-working CSE Cyber Security undergraduate at VIT-AP with a solid background in Java and Python to support the work of accuracy and analytical nature in the projects. I am passionate about Web Development, and I have got hands-on experience through various projects and internships using front-end and back-end technologies for creating dynamic web applications user-centric.<br>
+                <b>🌟 Core Skills</b> <br>
+                Intermediate in Java and Python programming. Ability to write efficient, and maintainable code; strong background in object-oriented programming, data structures, and algorithms for tackling complex problems.<br>
+                <b>Web Development:</b> HTML, CSS, JavaScript, React for front-end; Node.js and Django for back-end. Responsive design, RESTful APIs, accessibility in all platforms.<br>
+                <b>Databases:</b> SQL and NoSQL databases, such as MySQL and MongoDB.<br>
+                Version Control and Collaboration: Experience with Git and GitHub in collaborative coding, maintaining versions and documentation of the project.<br>
+                Problem-solving: I'm an agile learner; breaking up difficult problems into simpler bits, methodically solving each, is the approach.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+      </section>
+
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3> Experience </h3>
-              <p>1+ years <br />FullStack Web Development</p>
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>React Js</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-             <p>Vellore Institute of Technology <br>CYBER SECURITY</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-             Ambitious, hard-working CSE Cyber Security undergraduate at VIT-AP with a solid background in Java and Python to support the work of accuracy and analytical nature in the projects. I am passionate about Web Development, and I have got hands-on experience through various projects and internships using front-end and back-end technologies for creating dynamic web applications user-centric.<br>
-              <b>🌟 Core Skills</b> <br>
-              Intermediate in Java and Python programming. Ability to write efficient, and maintainable code; strong background in object-oriented programming, data structures, and algorithms for tackling complex problems.<br>
-              <b>Web Development:</b> HTML, CSS, JavaScript, React for front-end; Node.js for back-end. Responsive design, RESTful APIs, accessibility in all platforms.
-              <b>Databases:</b> SQL and NoSQL databases, such as MySQL and MongoDB.
-              <b>Version Control and Collaboration:</b> Experience with Git and GitHub in collaborative coding, maintaining versions and documentation of the project.
-              <b>Problem-solving:</b> I'm an agile learner; breaking up difficult problems into simpler bits, methodically solving each, is the approach. Both my coding and design approach on any project come coupled with creative skills and analyses.<br>
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React Js</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Mongo Db</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Node JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Mongo Db</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <h2 class="experience-sub-title">Others</h2>
-      
-            <h3> Github  ,    Vscode   ,   CyberSecurity  ,     Problem Solving</h3>
-            
-         
+        <h2 class="experience-sub-title">Others</h2>
+        <h3>Github, Vscode, CyberSecurity, Problem Solving</h3>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+      </section>
 
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/food-delivery.png"
-                alt="Project 1"
-                class="project-img"
-              />
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/food-delivery.webp" alt="Food Delivery Project" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Food Delivery</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/yaswanthmerugumala/food-delivery-website'" aria-label="Food Delivery GitHub">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://e-food-henna.vercel.app/'" aria-label="Food Delivery Live Demo">Live Demo</button>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Food Delivery</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/yaswanthmerugumala/food-delivery-website'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://e-food-henna.vercel.app/'"
-              >
-                Live Demo
-              </button>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/webscrapper.png" alt="Web Scrapper Project" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Web Scrapper using Python</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/yaswanthmerugumala/webscrapper-python'" aria-label="Web Scrapper GitHub">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/yaswanthmerugumala/webscrapper-python'" aria-label="Web Scrapper Live Demo">Live Demo</button>
+              </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/webscrapper.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Web Scrapper using Python</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/yaswanthmerugumala/webscrapper-python'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/yaswanthmerugumala/webscrapper-python'"
-              >
-                Live Demo
-              </button>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/weather.png" alt="Weather Project" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Weather App -Java console</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/yaswanthmerugumala/weather-app'" aria-label="Weather GitHub">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/yaswanthmerugumala/weather-app'" aria-label="Weather Live Demo">Live Demo</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">yaswanthmerugumala@gmail.com</a></p>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+      </section>
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+            <p><a href="mailto:yaswanthmerugumala@gmail.com" aria-label="Send an email">yaswanthmerugumala@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+            <p><a href="https://www.linkedin.com/in/yaswanthmerugumala/" aria-label="Visit LinkedIn Profile">LinkedIn</a></p>
+          </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/yaswanthmerugumala/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" aria-label="About section">About</a></li>
+            <li><a href="#experience" aria-label="Experience section">Experience</a></li>
+            <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+            <li><a href="#contact" aria-label="Contact section">Contact</a></li>
           </ul>
         </div>
       </nav>
       <p>Copyright &#169; 2023 YaswanthMerugumala. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
