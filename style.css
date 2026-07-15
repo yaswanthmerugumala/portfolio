@@ -380,6 +380,22 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+/* PROJECTS SECTION — layout fix for 5 project cards.
+   .about-containers has no flex-wrap at the base/desktop level (it only
+   gets flex-wrap: wrap inside the <=1400px and <=1200px media queries in
+   mediaqueries.css). That's fine for About/Experience (2 items each), but
+   Projects now has 5 cards and needs to wrap on all screen sizes, not just
+   narrow ones. Scoped to #projects so About/Experience layouts are untouched. */
+#projects .about-containers {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#projects .details-container {
+  flex: 1 1 280px;
+  max-width: 320px;
+}
+
 /* CONTACT */
 
 #contact {
