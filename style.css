@@ -9,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #f8faff 0%, #eef4ff 45%, #ffffff 100%);
+  color: #1d2433;
 }
 
 html {
@@ -16,7 +18,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: #4a5365;
 }
 
 /* TRANSITION */
@@ -39,27 +41,43 @@ nav {
   height: 17vh;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(248, 250, 255, 0.82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(26, 115, 232, 0.08);
+}
+
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 a {
-  color: black;
+  color: #1d2433;
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: transparent;
 }
 
 a:hover {
-  color: grey;
+  color: #1a73e8;
   text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-underline-offset: 0.6rem;
+  text-decoration-color: rgba(26, 115, 232, 0.35);
 }
 
 .logo {
   font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.logo span {
+  color: #1a73e8;
 }
 
 .logo:hover {
@@ -154,6 +172,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  max-width: 1400px;
 }
 
 .section-container {
@@ -212,29 +231,125 @@ section {
   line-height: 1.08;
 }
 
+#profile .stat-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#profile .chip-list {
+  margin-bottom: 1.5rem;
+}
+
 .section__text p {
   font-weight: 600;
 }
 
 .section__text__p1 {
   text-align: center;
+  color: #1a73e8;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  margin-bottom: 0.75rem;
+  color: #2b3343;
+}
+
+.section__text__p3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5d6980;
+  margin-bottom: 1.5rem;
 }
 
 .title {
   font-size: 3rem;
   text-align: center;
+  color: #1d2433;
+  margin-bottom: 0.75rem;
 }
 
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   gap: 1rem;
+}
+
+#socials-container a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 10px 22px rgba(17, 24, 39, 0.08);
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(110px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(26, 115, 232, 0.12);
+  border-radius: 1.2rem;
+  padding: 1rem 0.8rem;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.04);
+}
+
+.stat-box strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #101827;
+}
+
+.stat-box span {
+  font-size: 0.8rem;
+  color: #5d6980;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+}
+
+.chip-list span,
+.project-tags span {
+  padding: 0.5rem 0.8rem;
+  background: #edf4ff;
+  border: 1px solid rgba(26, 115, 232, 0.12);
+  border-radius: 999px;
+  color: #20437a;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.project-description {
+  margin: 0.8rem 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.current-role-box {
+  margin-top: 2rem;
+  padding: 1.2rem 1.4rem;
+  border-radius: 1.3rem;
+  background: linear-gradient(135deg, rgba(18, 32, 64, 0.98), rgba(19, 52, 99, 0.9));
+  box-shadow: 0 20px 35px rgba(15, 23, 42, 0.12);
+}
+
+.current-role-box .experience-sub-title,
+.current-role-box h3 {
+  color: #ffffff;
 }
 
 /* ICONS */
@@ -255,14 +370,15 @@ section {
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem;
-  width: 8rem;
+  padding: 1rem 1.4rem;
+  min-width: 8.5rem;
   border-radius: 2rem;
+  box-shadow: 0 8px 18px rgba(17, 24, 39, 0.08);
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #1d2433 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -272,20 +388,20 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: #1d2433;
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #111827;
 }
 
 .btn-color-2 {
-  background: none;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border-color: #1a73e8;
 }
 
 .btn-container {
@@ -317,6 +433,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  box-shadow: 0 20px 35px rgba(22, 32, 51, 0.12);
 }
 
 .section__pic-container img {
@@ -420,12 +537,6 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* PROJECTS SECTION — layout fix for 5 project cards.
-   .about-containers has no flex-wrap at the base/desktop level (it only
-   gets flex-wrap: wrap inside the <=1400px and <=1200px media queries in
-   mediaqueries.css). That's fine for About/Experience (2 items each), but
-   Projects now has 5 cards and needs to wrap on all screen sizes, not just
-   narrow ones. Scoped to #projects so About/Experience layouts are untouched. */
 #projects .about-containers {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -459,9 +570,6 @@ article .icon {
 
 .project-description {
   min-height: 5rem;
-  margin: 0.8rem 0 1rem;
-  font-size: 0.95rem;
-  line-height: 1.7;
 }
 
 .project-tags {
@@ -471,21 +579,10 @@ article .icon {
   margin-bottom: 1rem;
 }
 
-.project-tags span {
-  padding: 0.5rem 0.8rem;
-  border: 1px solid rgba(26, 115, 232, 0.12);
-  border-radius: 999px;
-  background: #edf4ff;
-  color: #20437a;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
 #projects .project-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: auto;
   min-width: 0;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
@@ -504,18 +601,24 @@ article .icon {
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 920px;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
   margin: 2rem auto;
-  padding: 0.5rem;
+  box-shadow: 0 18px 30px rgba(17, 24, 39, 0.05);
 }
 
 .contact-info-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 180px;
   gap: 0.5rem;
   margin: 1rem;
 }
