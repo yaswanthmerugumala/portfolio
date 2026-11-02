@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="28" y1="0" x2="755" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#664B3C"/>
+      <stop offset="1" stop-color="#342B29"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="22" fill="url(#bg)"/>
+  <rect x="34" y="30" width="732" height="390" rx="14" fill="#FAF8F5"/>
+  <rect x="34" y="30" width="190" height="390" rx="14" fill="#3F3935"/>
+  <path d="M62 64h21v21H62z" fill="#D9B57D" rx="5"/><path d="M68 73h9M68 78h9" stroke="#3F3935" stroke-width="2" stroke-linecap="round"/>
+  <rect x="96" y="69" width="93" height="11" rx="5.5" fill="#F0E9DD"/>
+  <rect x="56" y="117" width="145" height="37" rx="8" fill="#5A4E44"/>
+  <path d="M73 130h12v10H73z" stroke="#E3C38E" stroke-width="1.5"/><rect x="95" y="132" width="84" height="7" rx="3.5" fill="#E8DFD2"/>
+  <rect x="72" y="177" width="105" height="8" rx="4" fill="#A99A88"/><rect x="72" y="208" width="90" height="8" rx="4" fill="#A99A88"/><rect x="72" y="239" width="115" height="8" rx="4" fill="#A99A88"/>
+  <text x="251" y="72" fill="#453D37" font-family="Arial,sans-serif" font-size="19" font-weight="700">Private document vault</text>
+  <text x="251" y="96" fill="#91867B" font-family="Arial,sans-serif" font-size="12">Files encrypted and visible only to you</text>
+  <rect x="251" y="119" width="480" height="54" rx="9" fill="#FFFFFF" stroke="#E9E3DB"/>
+  <circle cx="276" cy="146" r="9" stroke="#A67C49" stroke-width="2"/><path d="M276 140v6l4 2" stroke="#A67C49" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="296" y="151" fill="#756A5F" font-family="Arial,sans-serif" font-size="13">Search private documents</text>
+  <rect x="251" y="190" width="228" height="82" rx="9" fill="#F2EDE5"/>
+  <path d="M273 210h22l12 12v29h-34z" fill="#D8C19D"/><path d="M295 210v13h12" stroke="#A7875A" stroke-width="2"/>
+  <text x="321" y="225" fill="#51473E" font-family="Arial,sans-serif" font-size="12" font-weight="700">Project brief.pdf</text>
+  <text x="321" y="245" fill="#95897C" font-family="Arial,sans-serif" font-size="10">Encrypted · 1.8 MB</text>
+  <rect x="494" y="190" width="237" height="82" rx="9" fill="#F2EDE5"/>
+  <path d="M516 210h22l12 12v29h-34z" fill="#D8C19D"/><path d="M538 210v13h12" stroke="#A7875A" stroke-width="2"/>
+  <text x="564" y="225" fill="#51473E" font-family="Arial,sans-serif" font-size="12" font-weight="700">Research notes.docx</text>
+  <text x="564" y="245" fill="#95897C" font-family="Arial,sans-serif" font-size="10">Encrypted · 620 KB</text>
+  <rect x="251" y="289" width="480" height="94" rx="9" fill="#FFFFFF" stroke="#E9E3DB"/>
+  <circle cx="285" cy="336" r="19" fill="#EEE5D8"/><path d="M279 334v-4a6 6 0 0 1 12 0v4M277 334h16v12h-16z" stroke="#987346" stroke-width="2" stroke-linejoin="round"/>
+  <text x="319" y="328" fill="#51473E" font-family="Arial,sans-serif" font-size="13" font-weight="700">Search without exposing your keywords</text>
+  <text x="319" y="350" fill="#8B8176" font-family="Arial,sans-serif" font-size="11">SHA-256 keyword hashing · JWT access control</text>
+</svg>

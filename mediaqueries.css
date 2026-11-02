@@ -1,9 +1,7 @@
 /* Screens 1400px and below */
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-    display: block;
+    min-height: 70vh;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -22,9 +20,29 @@
   
   /* Profile Section */
   #profile {
-    height: 83vh;
+    height: auto;
     margin-bottom: 0;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0 1rem;
+  }
+
+  #profile .section__pic-container {
+    flex-basis: 275px;
+    width: 275px;
+    height: 275px;
+    margin: 0;
+  }
+
+  #profile .section__text,
+  #profile .section__text__p1,
+  #profile .title {
+    text-align: left;
+  }
+
+  #profile .title {
+    font-size: 2.5rem;
   }
   
   /* About Section */
@@ -108,9 +126,59 @@
     height: 49vw;
     justify-content: center;
   }
+
+  #profile .section__pic-container {
+    flex-basis: 275px;
+    width: 275px;
+    height: 275px;
+  }
   
   /* Hide Elements */
   .arrow {
     display: none;
   }
 } 
+
+@media screen and (max-width: 768px) {
+  #profile {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #profile .section__pic-container {
+    flex-basis: 220px;
+    width: 220px;
+    height: 220px;
+  }
+
+  #profile .section__text,
+  #profile .section__text__p1,
+  #profile .title {
+    text-align: center;
+  }
+
+  #profile .title {
+    font-size: 2.2rem;
+  }
+
+  #projects .about-containers {
+    grid-template-columns: 1fr;
+  }
+
+  .project-title,
+  .project-description {
+    min-height: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #profile .section__pic-container {
+    flex-basis: 200px;
+    width: 200px;
+    height: 200px;
+  }
+
+  #profile .title {
+    font-size: 1.8rem;
+  }
+}

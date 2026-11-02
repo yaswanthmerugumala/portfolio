@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="50" y1="0" x2="760" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#335C50"/>
+      <stop offset="1" stop-color="#182E2B"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="22" fill="url(#bg)"/>
+  <rect x="34" y="30" width="732" height="390" rx="14" fill="#F8F8F3"/>
+  <rect x="34" y="30" width="170" height="390" rx="14" fill="#203B35"/>
+  <circle cx="69" cy="68" r="14" fill="#E8BE72"/><path d="M63 68h12M69 62v12" stroke="#203B35" stroke-width="2" stroke-linecap="round"/>
+  <rect x="94" y="61" width="78" height="13" rx="6.5" fill="#E8EEE8"/>
+  <rect x="54" y="117" width="126" height="34" rx="8" fill="#31564B"/>
+  <circle cx="73" cy="134" r="5" fill="#E8BE72"/><rect x="88" y="130" width="70" height="8" rx="4" fill="#F2F3E9"/>
+  <rect x="71" y="173" width="92" height="8" rx="4" fill="#8CA49A"/><rect x="71" y="204" width="80" height="8" rx="4" fill="#8CA49A"/><rect x="71" y="235" width="95" height="8" rx="4" fill="#8CA49A"/>
+  <text x="229" y="69" fill="#253B34" font-family="Arial,sans-serif" font-size="19" font-weight="700">Account overview</text>
+  <text x="229" y="92" fill="#83918A" font-family="Arial,sans-serif" font-size="12">Customer dashboard</text>
+  <rect x="229" y="112" width="246" height="108" rx="11" fill="#E8EFE7"/>
+  <text x="249" y="141" fill="#668076" font-family="Arial,sans-serif" font-size="12">AVAILABLE BALANCE</text>
+  <text x="249" y="180" fill="#233D34" font-family="Arial,sans-serif" font-size="28" font-weight="700">$24,680.00</text>
+  <rect x="493" y="112" width="244" height="108" rx="11" fill="#F3EBD9"/>
+  <text x="513" y="141" fill="#8E7852" font-family="Arial,sans-serif" font-size="12">MONTHLY PAYMENTS</text>
+  <text x="513" y="180" fill="#4C4331" font-family="Arial,sans-serif" font-size="28" font-weight="700">128</text>
+  <rect x="229" y="238" width="508" height="157" rx="11" fill="#FFFFFF" stroke="#E3E8E1"/>
+  <text x="249" y="268" fill="#33483E" font-family="Arial,sans-serif" font-size="14" font-weight="700">Payment activity</text>
+  <path d="M263 359h437" stroke="#E7ECE6"/>
+  <path d="M275 340 333 321 392 333 451 295 510 309 569 278 628 290 686 258" stroke="#548D70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="686" cy="258" r="5" fill="#D4A64E"/>
+  <rect x="249" y="375" width="62" height="7" rx="3.5" fill="#DBE4DD"/><rect x="321" y="375" width="40" height="7" rx="3.5" fill="#DBE4DD"/>
+</svg>

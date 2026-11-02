@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="30" y1="20" x2="770" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#153D42"/>
+      <stop offset="1" stop-color="#0F252B"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" rx="22" fill="url(#bg)"/>
+  <rect x="34" y="32" width="732" height="386" rx="14" fill="#F7FAF7"/>
+  <path d="M34 47a15 15 0 0 1 15-15h702a15 15 0 0 1 15 15v38H34V47Z" fill="#E7EFEB"/>
+  <circle cx="58" cy="59" r="5" fill="#D27E72"/><circle cx="76" cy="59" r="5" fill="#D7B565"/><circle cx="94" cy="59" r="5" fill="#68A98F"/>
+  <rect x="129" y="51" width="166" height="16" rx="8" fill="#CAD7D2"/>
+  <rect x="54" y="108" width="170" height="286" rx="10" fill="#EEF3F0"/>
+  <rect x="73" y="130" width="92" height="12" rx="6" fill="#244C4A"/>
+  <rect x="73" y="164" width="128" height="34" rx="8" fill="#DDE9E3"/>
+  <circle cx="91" cy="181" r="6" fill="#478C79"/><rect x="105" y="176" width="78" height="9" rx="4.5" fill="#8EA69D"/>
+  <rect x="73" y="210" width="128" height="34" rx="8" fill="#DDE9E3"/>
+  <circle cx="91" cy="227" r="6" fill="#478C79"/><rect x="105" y="222" width="66" height="9" rx="4.5" fill="#8EA69D"/>
+  <rect x="73" y="256" width="128" height="34" rx="8" fill="#DDE9E3"/>
+  <circle cx="91" cy="273" r="6" fill="#478C79"/><rect x="105" y="268" width="72" height="9" rx="4.5" fill="#8EA69D"/>
+  <rect x="249" y="108" width="492" height="286" rx="10" fill="#FFFFFF" stroke="#E3EAE5"/>
+  <text x="276" y="145" fill="#23423F" font-family="Arial,sans-serif" font-size="17" font-weight="700">Knowledge assistant</text>
+  <rect x="276" y="164" width="426" height="48" rx="9" fill="#F0F5F2"/>
+  <text x="293" y="194" fill="#54716A" font-family="Arial,sans-serif" font-size="14">What are the data retention requirements?</text>
+  <rect x="276" y="228" width="426" height="89" rx="9" fill="#EAF4EF"/>
+  <circle cx="296" cy="251" r="7" fill="#478C79"/>
+  <text x="313" y="255" fill="#284944" font-family="Arial,sans-serif" font-size="14" font-weight="700">Grounded response</text>
+  <rect x="293" y="271" width="377" height="7" rx="3.5" fill="#C5D8CD"/>
+  <rect x="293" y="287" width="339" height="7" rx="3.5" fill="#D4E1D9"/>
+  <text x="276" y="344" fill="#60766F" font-family="Arial,sans-serif" font-size="12" font-weight="700">RETRIEVED SOURCES</text>
+  <rect x="276" y="357" width="202" height="24" rx="6" fill="#F2F5F2"/>
+  <text x="288" y="373" fill="#47635B" font-family="Arial,sans-serif" font-size="11">Security policy.pdf</text>
+  <rect x="488" y="357" width="214" height="24" rx="6" fill="#F2F5F2"/>
+  <text x="500" y="373" fill="#47635B" font-family="Arial,sans-serif" font-size="11">Data guidelines.pdf</text>
+</svg>
